@@ -127,4 +127,5 @@ These arguments you will need to provide
 * [Dataset](https://www.kaggle.com/cdeotte/jpeg-melanoma-384x384)
 * [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
 * [Mixed Precision Training](https://arxiv.org/abs/1710.03740)
+* [EfficientNet Library](https://github.com/lukemelas/EfficientNet-PyTorch)
 
