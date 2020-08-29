@@ -80,12 +80,12 @@ def EvalModel(dataloader , model):
             target = target.cuda()
 
         
-        logits = model(img)
-        f_loss = focal_binary_cross_entropy(logits , target.view(-1,1).type_as(logits))
+            logits = model(img)
+            f_loss = focal_binary_cross_entropy(logits , target.view(-1,1).type_as(logits))
 
-        val_loss.append(f_loss.item())
-        preds.extend(logits.cpu().detach().numpy().tolist)
-        targets.extend(target.cpu().detach().numpy().tolist())
+            val_loss.append(f_loss.item())
+            preds.extend(logits.cpu().detach().numpy().tolist)
+            targets.extend(target.cpu().detach().numpy().tolist())
 
     
     return np.mean(val_loss) , preds , targets
